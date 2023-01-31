@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+
+
+::selection {
+    color: white;
+    background: #FF0032;
+  }
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+.section1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("http://cdn.benchmark.pl/uploads/article/84904/MODERNICON/0b1ed5e90405d84b643c0ff5f4f8a639f87c8403.jpg");
+    background-color: rgb(28, 28, 28);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* backface-visibility: ; */
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    max-width: 1400px;
+    margin: auto;
+}
+.logo{
+    font-family: 'oswald';
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FF0032;
+}
+.main-nav ul li{
+    display: inline;
+    text-decoration: none;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1rem;
+    
+}
+
+.main-nav ul li a:hover{
+    background-color: #FF0032;
+    /* animation: 1s ease; */
+}
+
+.container{
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-part{
+    width: 30rem;
+}
+
+.heading{
+    margin: 0;
+    padding: 0;
+    font-family: oswald;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.heading span{
+    color: #FF0032;
+}
+.subheading{
+    font-size: 2.5rem;
+    /* padding: -1rem; */
+}
+.image{
+    margin: -90px;
+    width: 40rem;
+    /* transform: scale(1.2); */
+}
+.button{
+    color: #FF0032;
+    font-size: 1.3rem;
+}
+
+
+
+@media(max-width: 1200px){
+    .image{
+        margin: 0;
+    }
+    .section1{
+        height: fit-content;
+    }
+    .content-part{width: 50rem;}
+}
+
+@media(max-width: 700px){
+    .main-nav ul{
+        display: none;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+    .subheading{
+        font-size: 1.5rem;
+    }
+
+    .image{
+        transform: scale(0.8);
+    }
+    .button{
+        font-size: 1.2rem;
+    }
+
+    .main-nav{
+        padding: 1rem 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
